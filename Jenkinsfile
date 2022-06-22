@@ -10,14 +10,7 @@ pipeline {
             stage('run hello world') {
                 steps {
                     script {
-                        sh 'hello_world.py'
-                    }
-                }
-            }
-            stage('Curl google') {
-                steps {
-                    script {
-                        sh 'curl_google.py'
+                        sh 'python hello_world.py'
                     }
                 }
             }
